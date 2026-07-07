@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.setAttribute('data-theme','light');}}catch(e){}})();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AHMED MTN | Premium Motion Designer Portfolio</title>
+  <meta name="description" content="Ahmed Ibrahim (AHMED MTN) is a luxury Motion Designer specializing in cinematic product advertisements, promotional videos, and logo animation.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="AHMED MTN | Premium Motion Designer Portfolio">
+  <meta property="og:description" content="Cinematic product advertisements, social media campaigns, and logo animation that bring ideas to life.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/portrait.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/layout.css">
+  <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/pages.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Page Preloader -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-logo">AHMED MTN</div>
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ambient Canvas Background -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="grid-overlay"></div>
+
+  <!-- Background Glow Blobs -->
+  <div class="bg-glow-blobs">
+    <div class="glow-blob glow-1"></div>
+    <div class="glow-blob glow-2"></div>
+  </div>
+
+  <!-- Header Nav -->
+  <header>
+    <div class="container nav-container">
+      <a href="./index.html" class="logo magnetic">
+        AHMED MTN <span class="logo-dot"></span>
+      </a>
+      <nav>
+        <a href="./index.html" class="nav-link active">Home</a>
+        <a href="./about.html" class="nav-link">About</a>
+        <a href="./services.html" class="nav-link">Services</a>
+        <a href="./portfolio.html" class="nav-link">Portfolio</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button class="menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav">
+    <a href="./index.html" class="nav-link active">Home</a>
+    <a href="./about.html" class="nav-link">About</a>
+    <a href="./services.html" class="nav-link">Services</a>
+    <a href="./portfolio.html" class="nav-link">Portfolio</a>
+    <a href="./contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" style="padding: 0;">
+    <div class="container hero-wrapper">
+      <div class="hero-content reveal">
+        <div class="hero-subtitle">Motion Designer</div>
+        <h1 class="hero-title gradient-text">Crafting Motion<br>That Brings Products To Life</h1>
+        <p class="hero-desc">
+          Ahmed is a Motion Designer specialized in creating cinematic product advertisements, social media campaigns, logo animations and promotional videos that transform ideas into engaging visual experiences.
+        </p>
+        <div class="hero-buttons">
+          <div class="magnetic-wrap">
+            <a href="./portfolio.html" class="btn btn-primary magnetic">
+              View Projects
+              <span class="btn-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </a>
+          </div>
+          <div class="magnetic-wrap">
+            <a href="./contact.html" class="btn btn-secondary magnetic">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-container reveal-scale delay-200">
+        <div class="portrait-wrapper">
+          <img src="./assets/images/portrait.png" alt="Ahmed Ibrahim MTN - Motion Designer" class="portrait-img">
+        </div>
+        <div class="portrait-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section Summary -->
+  <section class="about-summary">
+    <div class="container">
+      <div class="arabic-quote-block reveal">
+        <p>My name is Ahmed, and I work as a specialized motion graphics designer. I help brands transform their products into high-quality short-form video content, crafted specifically to capture customer attention and elevate the product's market image.</p>
+        <p>Recent studies show that 63% of consumers worldwide prefer watching a short video about a product before making a purchase decision.</p>
+        <p>That's why I design every project to serve a clear marketing goal, not just to be a beautiful video.</p>
+        <p>My scope of work includes product videos, motion identity, advertisements, and content tailored for social media platforms, all delivered with the highest production quality.</p>
+        <span>— Ahmed Ibrahim</span>
+      </div>
+
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Client Retention</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">Videos Delivered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">7+</div>
+          <div class="stat-label">Specializations</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">5★</div>
+          <div class="stat-label">Industry Rated</div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;" class="reveal">
+        <div class="magnetic-wrap">
+          <a href="./about.html" class="btn btn-secondary magnetic">
+            Discover My Journey
+            <span class="btn-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview Section -->
+  <section class="services-preview" style="background: rgba(5, 10, 24, 0.3);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">What I Do</span>
+        <h2 class="section-title gradient-text">Creative Services tailored for Luxury Brands</h2>
+      </div>
+
+      <div class="services-grid reveal">
+        <div class="glass-card service-card">
+          <div class="service-icon">🎥</div>
+          <h3 class="service-title">Product Commercial Videos</h3>
+          <p class="service-desc">Cinematic lighting, high-fidelity dynamics, and stunning visual storytelling designed to elevate your premium physical goods.</p>
+        </div>
+        <div class="glass-card service-card">
+          <div class="service-icon">📱</div>
+          <h3 class="service-title">App Promo Videos</h3>
+          <p class="service-desc">Transform complex application screens and flows into smooth, energetic kinetic journeys that drive app downloads.</p>
+        </div>
+        <div class="glass-card service-card">
+          <div class="service-icon">⚡</div>
+          <h3 class="service-title">Logo Animation</h3>
+          <p class="service-desc">Give your brand identity a striking motion personality, enhancing recall and establishing high production value.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem;" class="reveal">
+        <div class="magnetic-wrap">
+          <a href="./services.html" class="btn btn-secondary magnetic">Explore All 10 Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-showcase">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Selected Work</span>
+        <h2 class="section-title gradient-text">Cinematic Case Studies</h2>
+      </div>
+
+      <div class="portfolio-grid reveal">
+        <!-- Project 1 -->
+        <a href="./project-flow.html" class="project-card">
+          <div class="project-video-wrapper">
+            <video class="project-video" loop muted playsinline preload="auto">
+              <source src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4cOvjAKKe8yfZ2ZMrFuukZhbi/hf_20260705_215941_a1e6935e-68be-49f2-b749-d6c16e843b7d.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-card-content">
+            <div class="project-meta">
+              <span class="project-tag">App Promo</span>
+              <span class="project-duration">15s</span>
+            </div>
+            <h3 class="project-name">FLOW</h3>
+            <p class="project-short-desc">Visualizing the transformation from cognitive chaos to ultimate clarity through hyper motion kinetics.</p>
+            <div class="project-link">
+              View Case Study
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="./project-nilea.html" class="project-card">
+          <div class="project-video-wrapper">
+            <video class="project-video" loop muted playsinline preload="auto">
+              <source src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4cOvjAKKe8yfZ2ZMrFuukZhbi/hf_20260705_171101_e5b94245-4303-44ae-beda-ccf69012be54.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-card-content">
+            <div class="project-meta">
+              <span class="project-tag">Product Cinematic</span>
+              <span class="project-duration">15s</span>
+            </div>
+            <h3 class="project-name">NILEA</h3>
+            <p class="project-short-desc">Premium Egyptian juice brand visual case study showing macro product visuals and cultural design elements.</p>
+            <div class="project-link">
+              View Case Study
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="./project-genie.html" class="project-card">
+          <div class="project-video-wrapper">
+            <video class="project-video" loop muted playsinline preload="auto">
+              <source src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4cOvjAKKe8yfZ2ZMrFuukZhbi/hf_20260705_184808_0731fbf3-1a6e-4951-a28a-f71f9e9d9db9.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-card-content">
+            <div class="project-meta">
+              <span class="project-tag">FMCG Commercial</span>
+              <span class="project-duration">10s</span>
+            </div>
+            <h3 class="project-name">GENIE AL TABIAH</h3>
+            <p class="project-short-desc">Traditional Saudi tomato brand commercial featuring warm cinematic lighting and friendly mascot animations.</p>
+            <div class="project-link">
+              View Case Study
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem;" class="reveal">
+        <div class="magnetic-wrap">
+          <a href="./portfolio.html" class="btn btn-secondary magnetic">See All Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Large Contact CTA -->
+  <section class="contact-cta" style="border-top: 1px solid var(--border-glass);">
+    <div class="container reveal">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <span class="section-subtitle">Let's Work Together</span>
+        <h2 class="hero-title gradient-text" style="font-size: clamp(2rem, 4.5vw, 4rem); margin-bottom: 2.5rem;">Let's Create Something Amazing Together</h2>
+        <div class="magnetic-wrap">
+          <a href="https://wa.me/201090971246" target="_blank" class="btn btn-whatsapp magnetic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 0.5rem; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            WhatsApp Message
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">AHMED MTN<span class="logo-dot"></span></div>
+          <p class="footer-desc">Crafting cinematic motion design, commercials, promotional movies, and premium visualizations that captivate audiences worldwide.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-group">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./portfolio.html">Portfolio</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h4>Socials</h4>
+            <ul>
+              <li><a href="#" target="_blank" class="magnetic">Vimeo</a></li>
+              <li><a href="#" target="_blank" class="magnetic">Behance</a></li>
+              <li><a href="#" target="_blank" class="magnetic">Instagram</a></li>
+              <li><a href="#" target="_blank" class="magnetic">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 AHMED MTN. Designed & Developed by Ahmed Ibrahim
+        </div>
+        <div>
+          Based in Egypt. Available Worldwide.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-wrap">
+    <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+    </svg>
+    <svg class="arrow" viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/particles.js"></script>
+</body>
+</html>
