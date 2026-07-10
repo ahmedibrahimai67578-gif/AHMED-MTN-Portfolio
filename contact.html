@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.setAttribute('data-theme','light');}}catch(e){}})();</script>
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.setAttribute('data-theme','light');}var l=localStorage.getItem('lang');if(l==='ar'){document.documentElement.setAttribute('lang','ar');document.documentElement.setAttribute('dir','rtl');}}catch(e){}})();</script>
+  <!-- Google Analytics: replace G-XXXXXXXXXX with your real GA4 Measurement ID to activate -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact AHMED MTN | Motion Designer Studio</title>
   <meta name="description" content="Reach out to Ahmed MTN for premium motion graphics campaigns, app promotional videos, FMCG commercials and custom 3D dynamics.">
@@ -11,19 +19,23 @@
   <meta property="og:title" content="Contact AHMED MTN | Motion Designer Studio">
   <meta property="og:description" content="Start your premium video project. Direct WhatsApp access and inquiry deck.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://calm-kitten-1cd3f3.netlify.app/contact">
+  <link rel="canonical" href="https://calm-kitten-1cd3f3.netlify.app/contact">
+  <meta name="robots" content="index, follow">
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/layout.css">
   <link rel="stylesheet" href="./assets/css/components.css">
   <link rel="stylesheet" href="./assets/css/pages.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2300f0ff'/%3E%3Cstop offset='100%25' stop-color='%230072ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23020613'/%3E%3Ctext x='32' y='46' font-family='Arial, sans-serif' font-size='36' font-weight='800' fill='url(%23g)' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
   <!-- Page Preloader -->
   <div id="preloader">
     <div class="loader-content">
-      <div class="loader-logo">LETS TALK</div>
+      <div class="loader-logo" data-i18n="loader_contact">LETS TALK</div>
       <div class="loader-line-wrap">
         <div class="loader-line"></div>
       </div>
@@ -47,15 +59,18 @@
         AHMED MTN <span class="logo-dot"></span>
       </a>
       <nav>
-        <a href="./index.html" class="nav-link">Home</a>
-        <a href="./about.html" class="nav-link">About</a>
-        <a href="./services.html" class="nav-link">Services</a>
-        <a href="./portfolio.html" class="nav-link">Portfolio</a>
-        <a href="./contact.html" class="nav-link active">Contact</a>
+        <a href="./index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="./about.html" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="./services.html" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="./portfolio.html" class="nav-link" data-i18n="nav_portfolio">Portfolio</a>
+        <a href="./contact.html" class="nav-link active" data-i18n="nav_contact">Contact</a>
       </nav>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button class="theme-toggle lang-toggle" id="langToggle" aria-label="Toggle Arabic and English">
+        <span class="lang-label">AR</span>
       </button>
       <button class="menu-btn" aria-label="Toggle Menu">
         <span></span>
@@ -67,11 +82,11 @@
 
   <!-- Mobile Navigation Overlay -->
   <div class="mobile-nav">
-    <a href="./index.html" class="nav-link">Home</a>
-    <a href="./about.html" class="nav-link">About</a>
-    <a href="./services.html" class="nav-link">Services</a>
-    <a href="./portfolio.html" class="nav-link">Portfolio</a>
-    <a href="./contact.html" class="nav-link active">Contact</a>
+    <a href="./index.html" class="nav-link" data-i18n="nav_home">Home</a>
+    <a href="./about.html" class="nav-link" data-i18n="nav_about">About</a>
+    <a href="./services.html" class="nav-link" data-i18n="nav_services">Services</a>
+    <a href="./portfolio.html" class="nav-link" data-i18n="nav_portfolio">Portfolio</a>
+    <a href="./contact.html" class="nav-link active" data-i18n="nav_contact">Contact</a>
   </div>
 
   <!-- Contact Section Page -->
@@ -81,9 +96,9 @@
         
         <!-- Details column -->
         <div class="contact-info">
-          <span class="section-subtitle">Get In Touch</span>
-          <h1 class="hero-title gradient-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem; line-height: 1.1;">Let's Create<br>Something Amazing</h1>
-          <p>Have an upcoming campaign or product launch? Drop a line through the project inquiry form, or launch a direct chat via WhatsApp to discuss storyboards, budgets and schedules.</p>
+          <span class="section-subtitle" data-i18n="c_hero_subtitle">Get In Touch</span>
+          <h1 class="hero-title gradient-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem; line-height: 1.1;" data-i18n-html="c_hero_title_html">Let's Create<br>Something Amazing</h1>
+          <p data-i18n="c_hero_desc">Have an upcoming campaign or product launch? Drop a line through the project inquiry form, or launch a direct chat via WhatsApp to discuss storyboards, budgets and schedules.</p>
           
           <div class="contact-details">
             <!-- Detail 1 -->
@@ -92,7 +107,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
               </div>
               <div>
-                <div class="contact-detail-label">WhatsApp Contact</div>
+                <div class="contact-detail-label" data-i18n="c_detail1_label">WhatsApp Contact</div>
                 <div class="contact-detail-value">+20 1090971246</div>
               </div>
             </div>
@@ -103,8 +118,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               </div>
               <div>
-                <div class="contact-detail-label">Studio Email</div>
-                <div class="contact-detail-value">inquire@ahmedmtn.com</div>
+                <div class="contact-detail-label" data-i18n="c_detail2_label">Studio Email</div>
+                <div class="contact-detail-value">ahmedibrahim.ai67578@gmail.com</div>
               </div>
             </div>
 
@@ -114,8 +129,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
               </div>
               <div>
-                <div class="contact-detail-label">Location</div>
-                <div class="contact-detail-value">Cairo, Egypt (Global Service)</div>
+                <div class="contact-detail-label" data-i18n="c_detail3_label">Location</div>
+                <div class="contact-detail-value" data-i18n="c_detail3_value">Cairo, Egypt (Global Service)</div>
               </div>
             </div>
           </div>
@@ -123,51 +138,59 @@
 
         <!-- Form column -->
         <div class="glass-card contact-form-card">
-          <form id="project-inquiry-form" onsubmit="event.preventDefault(); alert('Message sent successfully! Ahmed will contact you shortly.'); this.reset();">
+          <form id="project-inquiry-form" name="project-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="project-inquiry">
+            <p style="position: absolute; left: -9999px;" aria-hidden="true">
+              <label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+            </p>
+
             <div class="form-grid">
               <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" class="glass-input" required placeholder="e.g. John Doe">
+                <label for="name" data-i18n="c_label_name">Your Name</label>
+                <input type="text" id="name" name="name" class="glass-input" required placeholder="e.g. John Doe" data-i18n-placeholder="c_placeholder_name">
               </div>
               <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" class="glass-input" required placeholder="e.g. john@brand.com">
+                <label for="email" data-i18n="c_label_email">Email Address</label>
+                <input type="email" id="email" name="email" class="glass-input" required placeholder="e.g. john@brand.com" data-i18n-placeholder="c_placeholder_email">
               </div>
             </div>
 
             <div class="form-grid">
               <div class="form-group">
-                <label for="project-type">Project Type</label>
-                <select id="project-type" class="glass-input" style="appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 fill=%22%2394a3b8%22><path d=%22M6 8L2 4h8z%22/></svg>'); background-repeat: no-repeat; background-position: right 1.5rem center;">
-                  <option value="commercial">Product Commercial</option>
-                  <option value="app-promo">App Promo Video</option>
-                  <option value="logo">Logo Animation</option>
-                  <option value="social">Social Media Campaign</option>
-                  <option value="other">Other Motion Graphics</option>
+                <label for="project-type" data-i18n="c_label_project_type">Project Type</label>
+                <select id="project-type" name="project-type" class="glass-input" style="appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 fill=%22%2394a3b8%22><path d=%22M6 8L2 4h8z%22/></svg>'); background-repeat: no-repeat; background-position: right 1.5rem center;">
+                  <option value="commercial" data-i18n="c_opt_commercial">Product Commercial</option>
+                  <option value="app-promo" data-i18n="c_opt_app_promo">App Promo Video</option>
+                  <option value="logo" data-i18n="c_opt_logo">Logo Animation</option>
+                  <option value="social" data-i18n="c_opt_social">Social Media Campaign</option>
+                  <option value="other" data-i18n="c_opt_other">Other Motion Graphics</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="budget">Estimated Budget</label>
-                <select id="budget" class="glass-input" style="appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 fill=%22%2394a3b8%22><path d=%22M6 8L2 4h8z%22/></svg>'); background-repeat: no-repeat; background-position: right 1.5rem center;">
-                  <option value="small">$150 - $250</option>
-                  <option value="mid">$250 - $500</option>
-                  <option value="premium">$500 - $1,000</option>
+                <label for="budget" data-i18n="c_label_budget">Estimated Budget</label>
+                <select id="budget" name="budget" class="glass-input" style="appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 fill=%22%2394a3b8%22><path d=%22M6 8L2 4h8z%22/></svg>'); background-repeat: no-repeat; background-position: right 1.5rem center;">
+                  <option value="under-300" data-i18n="c_opt_under300">Under $300</option>
+                  <option value="300-800" data-i18n="c_opt_300_800">$300 - $800</option>
+                  <option value="800-plus" data-i18n="c_opt_800plus">$800+</option>
+                  <option value="not-sure" data-i18n="c_opt_notsure">Not Sure Yet — Let's Discuss</option>
                 </select>
               </div>
             </div>
 
             <div class="form-group full-width">
-              <label for="message">Project Description</label>
-              <textarea id="message" class="glass-input" required placeholder="Outline project details, timeline constraints and visual inspiration..."></textarea>
+              <label for="message" data-i18n="c_label_message">Project Description</label>
+              <textarea id="message" name="message" class="glass-input" required placeholder="Outline project details, timeline constraints and visual inspiration..." data-i18n-placeholder="c_placeholder_message"></textarea>
             </div>
+
+            <div id="form-status" class="form-status" role="status" style="display: none;"></div>
 
             <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
               <div class="magnetic-wrap">
-                <button type="submit" class="btn btn-primary magnetic">Send Inquiry</button>
+                <button type="submit" class="btn btn-primary magnetic" data-i18n="c_btn_send">Send Inquiry</button>
               </div>
-              <span style="color: var(--text-muted); font-size: 0.85rem;">or connect instantly via</span>
+              <span style="color: var(--text-muted); font-size: 0.85rem;" data-i18n="c_or_connect">or connect instantly via</span>
               <div class="magnetic-wrap">
-                <a href="https://wa.me/201090971246" target="_blank" class="btn btn-whatsapp magnetic" style="padding: 0.9rem 1.8rem; font-size: 0.8rem;">WhatsApp Chat</a>
+                <a href="https://wa.me/201090971246" target="_blank" class="btn btn-whatsapp magnetic" style="padding: 0.9rem 1.8rem; font-size: 0.8rem;" data-i18n="c_btn_whatsapp_chat">WhatsApp Chat</a>
               </div>
             </div>
           </form>
@@ -183,35 +206,35 @@
       <div class="footer-content">
         <div class="footer-brand">
           <div class="footer-logo">AHMED MTN<span class="logo-dot"></span></div>
-          <p class="footer-desc">Crafting cinematic motion design, commercials, promotional movies, and premium visualizations that captivate audiences worldwide.</p>
+          <p class="footer-desc" data-i18n="footer_desc">Crafting cinematic motion design, commercials, promotional movies, and premium visualizations that captivate audiences worldwide.</p>
         </div>
         <div class="footer-links">
           <div class="footer-group">
-            <h4>Explore</h4>
+            <h4 data-i18n="footer_explore">Explore</h4>
             <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./services.html">Services</a></li>
-              <li><a href="./portfolio.html">Portfolio</a></li>
-              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./index.html" data-i18n="nav_home">Home</a></li>
+              <li><a href="./about.html" data-i18n="nav_about">About</a></li>
+              <li><a href="./services.html" data-i18n="nav_services">Services</a></li>
+              <li><a href="./portfolio.html" data-i18n="nav_portfolio">Portfolio</a></li>
+              <li><a href="./contact.html" data-i18n="nav_contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-group">
-            <h4>Socials</h4>
+            <h4 data-i18n="footer_socials">Socials</h4>
             <ul>
               <li><a href="#" target="_blank" class="magnetic">Vimeo</a></li>
               <li><a href="#" target="_blank" class="magnetic">Behance</a></li>
-              <li><a href="#" target="_blank" class="magnetic">Instagram</a></li>
+              <li><a href="https://www.instagram.com/ahmed_mtn_675" target="_blank" class="magnetic">Instagram</a></li>
               <li><a href="#" target="_blank" class="magnetic">LinkedIn</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="footer-copy">
+        <div class="footer-copy" data-i18n="footer_copy">
           &copy; 2026 AHMED MTN. Designed & Developed by Ahmed Ibrahim
         </div>
-        <div>
+        <div data-i18n="footer_location">
           Based in Egypt. Available Worldwide.
         </div>
       </div>

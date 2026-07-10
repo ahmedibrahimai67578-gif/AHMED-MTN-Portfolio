@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.setAttribute('data-theme','light');}}catch(e){}})();</script>
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.setAttribute('data-theme','light');}var l=localStorage.getItem('lang');if(l==='ar'){document.documentElement.setAttribute('lang','ar');document.documentElement.setAttribute('dir','rtl');}}catch(e){}})();</script>
+  <!-- Google Analytics: replace G-XXXXXXXXXX with your real GA4 Measurement ID to activate -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NILEA Case Study | AHMED MTN</title>
   <meta name="description" content="Case study of Nilea premium juice cinematic, showcasing macro cinematography, fluid dynamics, and Egyptian visual heritage.">
@@ -11,6 +19,9 @@
   <meta property="og:title" content="NILEA Case Study | AHMED MTN">
   <meta property="og:description" content="Product cinematic commercial blending macro liquid simulation and historical Egyptian branding.">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://calm-kitten-1cd3f3.netlify.app/project-nilea">
+  <link rel="canonical" href="https://calm-kitten-1cd3f3.netlify.app/project-nilea">
+  <meta name="robots" content="index, follow">
   <meta property="og:image" content="./assets/images/nilea_logo_key.png">
   
   <!-- Stylesheets -->
@@ -18,13 +29,14 @@
   <link rel="stylesheet" href="./assets/css/layout.css">
   <link rel="stylesheet" href="./assets/css/components.css">
   <link rel="stylesheet" href="./assets/css/pages.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2300f0ff'/%3E%3Cstop offset='100%25' stop-color='%230072ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23020613'/%3E%3Ctext x='32' y='46' font-family='Arial, sans-serif' font-size='36' font-weight='800' fill='url(%23g)' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
   <!-- Page Preloader -->
   <div id="preloader">
     <div class="loader-content">
-      <div class="loader-logo">CASE STUDY: NILEA</div>
+      <div class="loader-logo" data-i18n="loader_nilea">CASE STUDY: NILEA</div>
       <div class="loader-line-wrap">
         <div class="loader-line"></div>
       </div>
@@ -42,15 +54,18 @@
         AHMED MTN <span class="logo-dot"></span>
       </a>
       <nav>
-        <a href="./index.html" class="nav-link">Home</a>
-        <a href="./about.html" class="nav-link">About</a>
-        <a href="./services.html" class="nav-link">Services</a>
-        <a href="./portfolio.html" class="nav-link active">Portfolio</a>
-        <a href="./contact.html" class="nav-link">Contact</a>
+        <a href="./index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="./about.html" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="./services.html" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="./portfolio.html" class="nav-link active" data-i18n="nav_portfolio">Portfolio</a>
+        <a href="./contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
       </nav>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button class="theme-toggle lang-toggle" id="langToggle" aria-label="Toggle Arabic and English">
+        <span class="lang-label">AR</span>
       </button>
       <button class="menu-btn" aria-label="Toggle Menu">
         <span></span>
@@ -62,11 +77,11 @@
 
   <!-- Mobile Navigation Overlay -->
   <div class="mobile-nav">
-    <a href="./index.html" class="nav-link">Home</a>
-    <a href="./about.html" class="nav-link">About</a>
-    <a href="./services.html" class="nav-link">Services</a>
-    <a href="./portfolio.html" class="nav-link active">Portfolio</a>
-    <a href="./contact.html" class="nav-link">Contact</a>
+    <a href="./index.html" class="nav-link" data-i18n="nav_home">Home</a>
+    <a href="./about.html" class="nav-link" data-i18n="nav_about">About</a>
+    <a href="./services.html" class="nav-link" data-i18n="nav_services">Services</a>
+    <a href="./portfolio.html" class="nav-link active" data-i18n="nav_portfolio">Portfolio</a>
+    <a href="./contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
   </div>
 
   <!-- Full Width Autoplay Muted Video Hero -->
@@ -75,8 +90,8 @@
       <source src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4cOvjAKKe8yfZ2ZMrFuukZhbi/hf_20260705_171101_e5b94245-4303-44ae-beda-ccf69012be54.mp4" type="video/mp4">
     </video>
     <div class="container">
-      <span class="project-hero-category">Product Cinematic</span>
-      <h1 class="project-hero-title">Nilea</h1>
+      <span class="project-hero-category" data-i18n="nilea_hero_category">Product Cinematic</span>
+      <h1 class="project-hero-title" data-i18n="nilea_hero_title">Nilea</h1>
     </div>
   </section>
 
@@ -86,39 +101,39 @@
       
       <div class="project-meta-grid reveal">
         <div>
-          <div class="meta-item-label">Client</div>
-          <div class="meta-item-value">Nilea Premium Juices</div>
+          <div class="meta-item-label" data-i18n="meta_client">Client</div>
+          <div class="meta-item-value" data-i18n="nilea_client">Nilea Premium Juices</div>
         </div>
         <div>
-          <div class="meta-item-label">Duration</div>
-          <div class="meta-item-value">15 Seconds</div>
+          <div class="meta-item-label" data-i18n="meta_duration">Duration</div>
+          <div class="meta-item-value" data-i18n="nilea_duration">15 Seconds</div>
         </div>
         <div>
-          <div class="meta-item-label">Style</div>
-          <div class="meta-item-value">Macro Product Film</div>
+          <div class="meta-item-label" data-i18n="meta_style">Style</div>
+          <div class="meta-item-value" data-i18n="nilea_style">Macro Product Film</div>
         </div>
         <div>
-          <div class="meta-item-label">Main Message</div>
-          <div class="meta-item-value">Fruits Of The Nile</div>
+          <div class="meta-item-label" data-i18n="meta_message">Main Message</div>
+          <div class="meta-item-value" data-i18n="nilea_message">Fruits Of The Nile</div>
         </div>
       </div>
 
       <div class="project-overview-layout reveal">
         <div class="project-overview-content">
-          <h3>Project Overview</h3>
+          <h3 data-i18n="project_overview_title">Project Overview</h3>
           <div style="border-radius: 12px; overflow: hidden; margin: 1.5rem 0; border: 1px solid var(--border-glass);">
             <img src="./assets/images/nilea_logo_key.png" alt="Nilea Product & Logo" style="width: 100%; height: auto; display: block;">
           </div>
-          <p>Nilea is a luxury Egyptian juice brand, inspired by the historical fruit fields of the Nile delta. The brand centers around ancient Egyptian history, organic freshness, and royal heritage.</p>
-          <p>The goal of this commercial was to formulate a highly luxurious, macro cinematic production showcasing the package design, intricate gold-engraved details, and dynamic fruit collisions.</p>
-          
-          <h3 style="margin-top: 3rem;">Client Brief</h3>
-          <p>The campaign guidelines highlighted fresh splashes, macro droplets, premium textures, and traditional heritage iconography. The presentation needed to look extremely prestigious and clean, avoiding generic commercial setups.</p>
-          <p>We designed slow-motion liquid simulations reacting to glass surfaces, mapping gold hieroglyphs onto 3D bottle geometry, and using macro lighting to highlight fresh juice swirls and product facets.</p>
+          <p data-i18n="nilea_overview_p1">Nilea is a luxury Egyptian juice brand, inspired by the historical fruit fields of the Nile delta. The brand centers around ancient Egyptian history, organic freshness, and royal heritage.</p>
+          <p data-i18n="nilea_overview_p2">The goal of this commercial was to formulate a highly luxurious, macro cinematic production showcasing the package design, intricate gold-engraved details, and dynamic fruit collisions.</p>
+
+          <h3 style="margin-top: 3rem;" data-i18n="client_brief_title">Client Brief</h3>
+          <p data-i18n="nilea_brief_p1">The campaign guidelines highlighted fresh splashes, macro droplets, premium textures, and traditional heritage iconography. The presentation needed to look extremely prestigious and clean, avoiding generic commercial setups.</p>
+          <p data-i18n="nilea_brief_p2">We designed slow-motion liquid simulations reacting to glass surfaces, mapping gold hieroglyphs onto 3D bottle geometry, and using macro lighting to highlight fresh juice swirls and product facets.</p>
         </div>
 
         <div class="project-overview-sidebar">
-          <div class="sidebar-heading">Production Stack</div>
+          <div class="sidebar-heading" data-i18n="production_stack_label">Production Stack</div>
           <ul class="tools-list">
             <li class="tool-badge">Cinema 4D</li>
             <li class="tool-badge">Redshift Render</li>
@@ -136,45 +151,45 @@
   <section class="process-section" style="background: rgba(5, 10, 24, 0.3);">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-subtitle">Methodology</span>
-        <h2 class="section-title gradient-text">Creative Process Timeline</h2>
+        <span class="section-subtitle" data-i18n="tl_subtitle">Methodology</span>
+        <h2 class="section-title gradient-text" data-i18n="tl_title">Creative Process Timeline</h2>
       </div>
 
       <div class="timeline-horizontal reveal">
         <div class="timeline-step">
           <div class="step-number">01</div>
-          <h4 class="step-title">Brief</h4>
-          <p class="step-desc">Aligning project goals, marketing aims and technical benchmarks.</p>
+          <h4 class="step-title" data-i18n="tl_step1_title">Brief</h4>
+          <p class="step-desc" data-i18n="tl_step1_desc">Aligning project goals, marketing aims and technical benchmarks.</p>
         </div>
         <div class="timeline-step">
           <div class="step-number">02</div>
-          <h4 class="step-title">Research</h4>
-          <p class="step-desc">Analyzing competitors, visual trends, and design languages.</p>
+          <h4 class="step-title" data-i18n="tl_step2_title">Research</h4>
+          <p class="step-desc" data-i18n="tl_step2_desc">Analyzing competitors, visual trends, and design languages.</p>
         </div>
         <div class="timeline-step">
           <div class="step-number">03</div>
-          <h4 class="step-title">Storyboard</h4>
-          <p class="step-desc">Sketching frames to define the visual narrative flow.</p>
+          <h4 class="step-title" data-i18n="tl_step3_title">Storyboard</h4>
+          <p class="step-desc" data-i18n="tl_step3_desc">Sketching frames to define the visual narrative flow.</p>
         </div>
         <div class="timeline-step">
           <div class="step-number">04</div>
-          <h4 class="step-title">Design</h4>
-          <p class="step-desc">Creating vector layouts, color palettes, and UI models.</p>
+          <h4 class="step-title" data-i18n="tl_step4_title">Design</h4>
+          <p class="step-desc" data-i18n="tl_step4_desc">Creating vector layouts, color palettes, and UI models.</p>
         </div>
         <div class="timeline-step">
           <div class="step-number">05</div>
-          <h4 class="step-title">Animation</h4>
-          <p class="step-desc">Bringing assets to life with curves, pacing and dynamics.</p>
+          <h4 class="step-title" data-i18n="tl_step5_title">Animation</h4>
+          <p class="step-desc" data-i18n="tl_step5_desc">Bringing assets to life with curves, pacing and dynamics.</p>
         </div>
         <div class="timeline-step">
           <div class="step-number">06</div>
-          <h4 class="step-title">Rendering</h4>
-          <p class="step-desc">Exporting in high resolutions, adding motion blur & glow filters.</p>
+          <h4 class="step-title" data-i18n="tl_step6_title">Rendering</h4>
+          <p class="step-desc" data-i18n="tl_step6_desc">Exporting in high resolutions, adding motion blur & glow filters.</p>
         </div>
         <div class="timeline-step">
           <div class="step-number">07</div>
-          <h4 class="step-title">Delivery</h4>
-          <p class="step-desc">Providing final formats tailored to social platforms.</p>
+          <h4 class="step-title" data-i18n="tl_step7_title">Delivery</h4>
+          <p class="step-desc" data-i18n="tl_step7_desc">Providing final formats tailored to social platforms.</p>
         </div>
       </div>
     </div>
@@ -184,8 +199,8 @@
   <section class="gallery-section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-subtitle">Visual Board</span>
-        <h2 class="section-title gradient-text">Storyboard Gallery</h2>
+        <span class="section-subtitle" data-i18n="gallery_subtitle">Visual Board</span>
+        <h2 class="section-title gradient-text" data-i18n="gallery_title">Storyboard Gallery</h2>
       </div>
 
       <div class="storyboard-grid reveal" style="grid-template-columns: 1fr;">
@@ -200,8 +215,8 @@
   <section class="final-video-section" style="background: rgba(5, 10, 24, 0.3);">
     <div class="container">
       <div class="section-header reveal" style="text-align: center; max-width: none; margin-bottom: 2rem;">
-        <span class="section-subtitle">Output</span>
-        <h2 class="section-title gradient-text">Final Promotional Video</h2>
+        <span class="section-subtitle" data-i18n="final_video_subtitle">Output</span>
+        <h2 class="section-title gradient-text" data-i18n="final_video_title">Final Promotional Video</h2>
       </div>
 
       <div class="final-video-container reveal">
@@ -216,13 +231,13 @@
   <!-- Next Project Banner Navigation -->
   <section class="next-project-banner">
     <div class="container reveal">
-      <span class="next-project-label">Next Case Study</span>
+      <span class="next-project-label" data-i18n="next_case_label">Next Case Study</span>
       <a href="./project-genie.html" class="magnetic">
-        <h2 class="next-project-title">Genie Al Tabiah</h2>
+        <h2 class="next-project-title" data-i18n="nilea_next_name">Genie Al Tabiah</h2>
       </a>
       <div class="magnetic-wrap">
         <a href="./project-genie.html" class="btn btn-secondary magnetic">
-          View Next Case
+          <span data-i18n="btn_view_next_case">View Next Case</span>
           <span class="btn-icon">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </span>
@@ -237,35 +252,35 @@
       <div class="footer-content">
         <div class="footer-brand">
           <div class="footer-logo">AHMED MTN<span class="logo-dot"></span></div>
-          <p class="footer-desc">Crafting cinematic motion design, commercials, promotional movies, and premium visualizations that captivate audiences worldwide.</p>
+          <p class="footer-desc" data-i18n="footer_desc">Crafting cinematic motion design, commercials, promotional movies, and premium visualizations that captivate audiences worldwide.</p>
         </div>
         <div class="footer-links">
           <div class="footer-group">
-            <h4>Explore</h4>
+            <h4 data-i18n="footer_explore">Explore</h4>
             <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./services.html">Services</a></li>
-              <li><a href="./portfolio.html">Portfolio</a></li>
-              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./index.html" data-i18n="nav_home">Home</a></li>
+              <li><a href="./about.html" data-i18n="nav_about">About</a></li>
+              <li><a href="./services.html" data-i18n="nav_services">Services</a></li>
+              <li><a href="./portfolio.html" data-i18n="nav_portfolio">Portfolio</a></li>
+              <li><a href="./contact.html" data-i18n="nav_contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-group">
-            <h4>Socials</h4>
+            <h4 data-i18n="footer_socials">Socials</h4>
             <ul>
               <li><a href="#" target="_blank" class="magnetic">Vimeo</a></li>
               <li><a href="#" target="_blank" class="magnetic">Behance</a></li>
-              <li><a href="#" target="_blank" class="magnetic">Instagram</a></li>
+              <li><a href="https://www.instagram.com/ahmed_mtn_675" target="_blank" class="magnetic">Instagram</a></li>
               <li><a href="#" target="_blank" class="magnetic">LinkedIn</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="footer-copy">
+        <div class="footer-copy" data-i18n="footer_copy">
           &copy; 2026 AHMED MTN. Designed & Developed by Ahmed Ibrahim
         </div>
-        <div>
+        <div data-i18n="footer_location">
           Based in Egypt. Available Worldwide.
         </div>
       </div>

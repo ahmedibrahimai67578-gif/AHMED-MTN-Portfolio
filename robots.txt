@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://calm-kitten-1cd3f3.netlify.app/sitemap.xml

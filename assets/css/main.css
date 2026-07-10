@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap');
 
 :root {
   /* Color Palette */
@@ -218,3 +218,52 @@ a {
 .delay-300 { transition-delay: 0.3s; }
 .delay-400 { transition-delay: 0.4s; }
 .delay-500 { transition-delay: 0.5s; }
+
+/* ---------------------------------------------------------------------- */
+/* RTL (Arabic) support                                                    */
+/* Flexbox rows already mirror automatically based on the dir attribute,   */
+/* so most of the layout needs no changes. These are the explicit fixes.  */
+/* ---------------------------------------------------------------------- */
+html[dir="rtl"] body {
+  font-family: 'Cairo', var(--font-body);
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html[dir="rtl"] .logo,
+html[dir="rtl"] .footer-logo,
+html[dir="rtl"] .loader-logo {
+  font-family: 'Cairo', var(--font-heading);
+}
+
+/* The "about me" quote block: LTR/left-accent in English, RTL/right-accent in Arabic */
+html[dir="rtl"] .arabic-quote-block {
+  direction: rtl;
+  text-align: right;
+  border-left: none;
+  border-right: 4px solid var(--color-accent);
+}
+
+/* Directional icon spacing that doesn't auto-flip via flexbox */
+html[dir="rtl"] .btn-icon {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+html[dir="rtl"] .btn:hover .btn-icon {
+  transform: translateX(-5px);
+}
+
+html[dir="rtl"] .btn-whatsapp svg {
+  margin-right: 0 !important;
+  margin-left: 0.5rem !important;
+}
+
+html[dir="rtl"] .project-link svg,
+html[dir="rtl"] .next-project-banner .btn-icon {
+  transform: scaleX(-1);
+}
