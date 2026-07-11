@@ -30,7 +30,7 @@ const translations = {
     btn_whatsapp_msg: 'راسلني عبر واتساب', btn_whatsapp_chat: 'محادثة واتساب',
     btn_view_case_study: 'عرض دراسة الحالة', btn_view_project_case: 'عرض تفاصيل المشروع',
     loader_about: 'نبذة عني', loader_services: 'الخدمات', loader_portfolio: 'أعمالي', loader_contact: 'لنتحدث',
-    loader_flow: 'دراسة حالة: فلو', loader_genie: 'دراسة حالة: جيني', loader_nilea: 'دراسة حالة: نيليا',
+    loader_flow: 'دراسة حالة: فلو', loader_genie: 'دراسة حالة: جيني', loader_nilea: 'دراسة حالة: نيليا', loader_athar: 'دراسة حالة: أثر',
 
     // index.html
     idx_hero_subtitle: 'مصمم موشن جرافيك',
@@ -91,10 +91,11 @@ const translations = {
     // portfolio.html
     pf_hero_subtitle: 'دراسات الحالة', pf_hero_title: 'أعمال مختارة',
     pf_hero_desc: 'مجموعة من مشاريع الموشن جرافيك المفاهيمية والتجارية التي تعرض روايات المنتجات، الإضاءة المخصصة، محاكاة السوائل، وتنسيقات الإعلانات السينمائية.',
-    pf_filter_all: 'كل المشاريع', pf_filter_app: 'ترويج تطبيق', pf_filter_fmcg: 'إعلان تجاري', pf_filter_product: 'سينمائي للمنتج',
+    pf_filter_all: 'كل المشاريع', pf_filter_app: 'ترويج تطبيق', pf_filter_fmcg: 'إعلان تجاري', pf_filter_product: 'سينمائي للمنتج', pf_filter_brand: 'هوية بصرية',
     pf_p1_tag: 'ترويج تطبيق', pf_p1_dur: '15 ثانية', pf_p1_desc: 'طباعة حركية ومتجهات هندسية توضح الانتقال الذهني من الفوضى إلى وضوح تام في بيئة العمل.',
     pf_p2_tag: 'سينمائي للمنتج', pf_p2_dur: '15 ثانية', pf_p2_desc: 'فيلم منتج بتصوير ماكرو يعرض رذاذ السوائل، التغليف الفاخر، والهوية المصرية التراثية.',
     pf_p3_tag: 'إعلان تجاري', pf_p3_dur: '10 ثوانٍ', pf_p3_desc: 'إعلان لعصير طماطم سعودي يجمع بين العمارة التراثية الإقليمية وأنيميشن شخصية مرحة.',
+    pf_p4_tag: 'فيلم هوية بصرية', pf_p4_dur: '15 ثانية', pf_p4_desc: 'هوية بصرية كاملة وفيديو سينمائي لبراند قهوة مختصة — من تصميم اللوجو والعبوة، لحركة تحكي رحلة القهوة كاملة.',
 
     // contact.html
     c_hero_subtitle: 'تواصل معي',
@@ -143,7 +144,7 @@ const translations = {
     genie_overview_p2: 'كان هدف هذه الحملة تصميم أنيميشن سينمائي دافئ يمزج بين الهوية الإقليمية السعودية التقليدية وتفاعلات شخصية مرحة، لبناء طابع عائلي ودود.',
     genie_brief_p1: 'طلبت العلامة فيديو إعلاني سينمائي يضم تميمتهم الودودة على شكل طماطم. احتاجت البيئة لتعكس الجذور المعمارية الإقليمية — بإضاءة دافئة ساعة الغروب تنعكس على مباني الطين النجدية التقليدية.',
     genie_brief_p2: 'قمنا بإنشاء بيئة ثلاثية الأبعاد مخصصة وأنيميشن للتميمة وهي تتجول في شوارع القرية المشمسة، لتنتهي بمشهد صب ديناميكي يعرض محاكاة عصير طازج وواقعي.',
-    genie_next_name: 'فلو',
+    genie_next_name: 'أثر',
 
     // project-nilea.html
     nilea_hero_category: 'سينمائي للمنتج', nilea_hero_title: 'نيليا',
@@ -152,7 +153,16 @@ const translations = {
     nilea_overview_p2: 'كان هدف هذا الإعلان صياغة إنتاج ماكرو فاخر للغاية يعرض تصميم العبوة، التفاصيل المذهبة الدقيقة، وتصادمات الفاكهة الديناميكية.',
     nilea_brief_p1: 'أبرزت إرشادات الحملة الرذاذ الطازج، القطرات الماكرو، الملمس الفاخر، والرموز التراثية التقليدية. احتاج العرض لأن يبدو فاخرًا للغاية ونظيفًا، بعيدًا عن الإعدادات الإعلانية التقليدية.',
     nilea_brief_p2: 'صممنا محاكاة سوائل بطيئة الحركة تتفاعل مع أسطح زجاجية، ورسمنا هيروغليفية ذهبية على هندسة الزجاجة ثلاثية الأبعاد، مع إضاءة ماكرو لإبراز دوامات العصير الطازجة وتفاصيل المنتج.',
-    nilea_next_name: 'جيني الطبيعة'
+    nilea_next_name: 'جيني الطبيعة',
+
+    // project-athar.html
+    athar_hero_category: 'فيلم هوية بصرية', athar_hero_title: 'أثر',
+    athar_duration: '15 ثانية', athar_style: 'سينمائي عصري', athar_message: 'من الحبة إلى الكوباية، القهوة اللي بتترك أثر',
+    athar_overview_p1: 'أثر براند قهوة مختصة بيقدّم تشكيلة من درجات التحميص (Dark / Medium / Light Roast). المشروع بدأ من الصفر — مفيش هوية بصرية جاهزة، فكانت المهمة الأولى بناء الهوية كاملة (الاسم، اللوجو، تصميم العبوة) قبل حتى التفكير في أي حركة.',
+    athar_overview_p2: 'هدف الحملة كان إنتاج فيديو تعريفي بيحكي رحلة القهوة من الحبة الخام للكوباية بأسلوب سينمائي عصري، وفي نفس الوقت يوضح إن البراند بيقدم تشكيلة متنوعة مش منتج واحد بس — عشان يُستخدم كمعاينة مباشرة في التواصل مع أصحاب محلات القهوة المختصة.',
+    athar_brief_p1: 'البراند احتاج حل كامل: هوية بصرية تنافس براندات القهوة المختصة في السوق الخليجي، وفيديو ترويجي يقدر يوصل جودة المنتج وحرفية التحضير من غير ما يعتمد على تصوير حقيقي أو استوديو.',
+    athar_brief_p2: 'اتنفذ الحل على مرحلتين: أولًا تصميم نظام العبوة الكامل (كيس كرافت مطفي، نافذة دائرية، ألوان تميّز كل درجة تحميص) عشان يبقى قابل للتطبيق على أي منتج مستقبلي للبراند، وبعدها فيديو موشن بستايل داكن وعصري بيبدأ بانسكاب الحبوب من الكيس ويختم بعرض التشكيلة الكاملة مع الشعار — عشان يوصل رسالتين في نفس الوقت: الحرفية، والتنوع.',
+    athar_next_name: 'فلو'
   },
   en: {
     // Shared chrome
@@ -164,7 +174,7 @@ const translations = {
     btn_whatsapp_msg: 'WhatsApp Message', btn_whatsapp_chat: 'WhatsApp Chat',
     btn_view_case_study: 'View Case Study', btn_view_project_case: 'View Project Case',
     loader_about: 'ABOUT ME', loader_services: 'SERVICES', loader_portfolio: 'PORTFOLIO', loader_contact: 'LETS TALK',
-    loader_flow: 'CASE STUDY: FLOW', loader_genie: 'CASE STUDY: GENIE', loader_nilea: 'CASE STUDY: NILEA',
+    loader_flow: 'CASE STUDY: FLOW', loader_genie: 'CASE STUDY: GENIE', loader_nilea: 'CASE STUDY: NILEA', loader_athar: 'CASE STUDY: ATHAR',
 
     idx_hero_subtitle: 'Motion Designer',
     idx_hero_title_html: 'Crafting Motion<br>That Brings Products To Life',
@@ -221,10 +231,11 @@ const translations = {
 
     pf_hero_subtitle: 'Case Studies', pf_hero_title: 'Selected Work',
     pf_hero_desc: 'A collection of conceptual and commercial motion design projects showcasing product narratives, custom lighting, fluid simulations, and cinematic advertising layouts.',
-    pf_filter_all: 'All Projects', pf_filter_app: 'App Promo', pf_filter_fmcg: 'FMCG Commercial', pf_filter_product: 'Product Cinematic',
+    pf_filter_all: 'All Projects', pf_filter_app: 'App Promo', pf_filter_fmcg: 'FMCG Commercial', pf_filter_product: 'Product Cinematic', pf_filter_brand: 'Brand Identity',
     pf_p1_tag: 'App Promo', pf_p1_dur: '15 Seconds', pf_p1_desc: 'Kinetic typography and geometric vectors illustrating cognitive transition from chaos into extreme workspace clarity.',
     pf_p2_tag: 'Product Cinematic', pf_p2_dur: '15 Seconds', pf_p2_desc: 'Macro cinematography product film showcasing fluid splashes, luxury packaging and ancestral Egyptian heritage branding.',
     pf_p3_tag: 'FMCG Commercial', pf_p3_dur: '10 Seconds', pf_p3_desc: 'Saudi tomato juice commercial combining traditional regional heritage architecture with playful character animation and mascot dynamics.',
+    pf_p4_tag: 'Brand Identity Film', pf_p4_dur: '15 Seconds', pf_p4_desc: 'Complete visual identity and cinematic video for a specialty coffee brand — from logo and packaging design to motion that tells the full coffee journey.',
 
     c_hero_subtitle: 'Get In Touch',
     c_hero_title_html: "Let's Create<br>Something Amazing",
@@ -269,7 +280,7 @@ const translations = {
     genie_overview_p2: 'The goal of this campaign was to design a warm, cinematic animation that merges traditional Saudi regional identity with playful character interactions, establishing a family-friendly aesthetic.',
     genie_brief_p1: 'The brand required a cinematic video commercial featuring their friendly tomato mascot. The environment needed to reflect regional architectural roots—capturing warm, golden hour lighting falling across traditional Najdi clay mudbrick structures.',
     genie_brief_p2: 'We created a custom 3D environment and animated the mascot navigating through the sunny village streets, culminating in a dynamic pouring scene showcasing fresh, photorealistic juice simulation.',
-    genie_next_name: 'Flow',
+    genie_next_name: 'Athar',
 
     nilea_hero_category: 'Product Cinematic', nilea_hero_title: 'Nilea',
     nilea_client: 'Nilea Premium Juices', nilea_duration: '15 Seconds', nilea_style: 'Macro Product Film', nilea_message: 'Fruits Of The Nile',
@@ -277,7 +288,15 @@ const translations = {
     nilea_overview_p2: 'The goal of this commercial was to formulate a highly luxurious, macro cinematic production showcasing the package design, intricate gold-engraved details, and dynamic fruit collisions.',
     nilea_brief_p1: 'The campaign guidelines highlighted fresh splashes, macro droplets, premium textures, and traditional heritage iconography. The presentation needed to look extremely prestigious and clean, avoiding generic commercial setups.',
     nilea_brief_p2: 'We designed slow-motion liquid simulations reacting to glass surfaces, mapping gold hieroglyphs onto 3D bottle geometry, and using macro lighting to highlight fresh juice swirls and product facets.',
-    nilea_next_name: 'Genie Al Tabiah'
+    nilea_next_name: 'Genie Al Tabiah',
+
+    athar_hero_category: 'Brand Identity Film', athar_hero_title: 'ATHAR',
+    athar_duration: '15 Seconds', athar_style: 'Modern Cinematic', athar_message: 'From Bean To Cup, Coffee That Leaves A Mark',
+    athar_overview_p1: 'ATHAR is a specialty coffee brand offering a range of roast profiles (Dark, Medium, and Light Roast). The project started from zero — there was no existing visual identity, so the first task was building the complete brand identity (name, logo, and packaging design) before even thinking about motion.',
+    athar_overview_p2: 'The goal of the campaign was to produce an introductory video narrating the coffee\'s journey from raw bean to cup in a modern cinematic style, while also showcasing that the brand offers a diverse roast range rather than a single product — designed to serve as a direct preview when reaching out to specialty coffee shop owners.',
+    athar_brief_p1: 'The brand needed a complete end-to-end solution: a visual identity that competes with specialty coffee brands in the Gulf market, and a promotional video that could convey product quality and preparation craftsmanship without relying on real-world filming or a physical studio.',
+    athar_brief_p2: 'The solution was executed in two phases: first, designing a complete packaging system (matte kraft pouch, circular window, and colors distinguishing each roast level) so it could scale to any future product from the brand, followed by a dark, modern-style motion video that opens with beans pouring from the pouch and closes on the full roast range alongside the logo — delivering two messages at once: craftsmanship and variety.',
+    athar_next_name: 'Flow'
   }
 };
 
